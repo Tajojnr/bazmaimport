@@ -1,8 +1,8 @@
-'use client'
+﻿'use client'
 
 import { useState, useRef, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Send, X, Sparkles, MessageCircle } from 'lucide-react'
+import { Send, X, Sparkles } from 'lucide-react'
 import { getBotResponse } from '@/lib/chatbot'
 
 interface Message {
@@ -14,20 +14,28 @@ interface Message {
 }
 
 export function BazmaChatbot() {
+  const [mounted, setMounted] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
   const [messages, setMessages] = useState<Message[]>([])
   const [input, setInput] = useState('')
   const [isTyping, setIsTyping] = useState(false)
   const endRef = useRef<HTMLDivElement>(null)
 
+  // Prevent SSR/Hydration mismatch
   useEffect(() => {
-    endRef.current?.scrollIntoView({ behavior: 'smooth' })
-  }, [messages, isTyping])
+    setMounted(true)
+  }, [])
+
+  useEffect(() => {
+    if (isOpen) {
+      endRef.current?.scrollIntoView({ behavior: 'smooth' })
+    }
+  }, [messages, isTyping, isOpen])
 
   useEffect(() => {
     if (isOpen && messages.length === 0) {
       setIsTyping(true)
-      setTimeout(() => {
+      const timer = setTimeout(() => {
         setIsTyping(false)
         setMessages([
           {
@@ -39,8 +47,11 @@ export function BazmaChatbot() {
           }
         ])
       }, 600)
+      return () => clearTimeout(timer)
     }
-  }, [isOpen])
+  }, [isOpen, messages.length])
+
+  if (!mounted) return null
 
   const handleSend = (textToSend?: string) => {
     const text = textToSend || input.trim()
@@ -70,7 +81,7 @@ export function BazmaChatbot() {
           quickReplies: res.quickReplies
         }
       ])
-    }, 1200)
+    }, 1000)
   }
 
   return (
@@ -82,13 +93,13 @@ export function BazmaChatbot() {
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             exit={{ scale: 0 }}
-            whileHover={{ scale: 1.08 }}
+            whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => setIsOpen(true)}
             className="fixed bottom-6 right-6 z-50 bg-gradient-to-r from-red-600 to-red-700 text-white p-3 md:p-4 rounded-full shadow-2xl flex items-center gap-3 border-2 border-white/20"
           >
-            <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center overflow-hidden">
-              <img src="/bot/baz-avatar-idle.svg" alt="Baz" className="w-8 h-8" />
+            <div className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-white/20 flex items-center justify-center overflow-hidden">
+              <img src="/bot/baz-avatar-idle.svg" alt="Baz" className="w-6 h-6 md:w-8 md:h-8" />
             </div>
             <span className="font-bold text-sm hidden md:inline pr-2">Chat with Baz 🤖</span>
           </motion.button>
