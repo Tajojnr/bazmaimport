@@ -1,0 +1,39 @@
+﻿<svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#F3F4F6"/>
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1F2937"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <radialGradient id="eyeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#EF4444"/>
+      <stop offset="100%" stop-color="#DC2626"/>
+    </radialGradient>
+  </defs>
+  <!-- Antenna -->
+  <line x1="50" y1="20" x2="50" y2="10" stroke="#DC2626" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="50" cy="8" r="3.5" fill="#EF4444"/>
+  <!-- Head -->
+  <rect x="20" y="20" width="60" height="55" rx="16" fill="url(#bodyGrad)" stroke="#E5E7EB" stroke-width="2"/>
+  <!-- Screen -->
+  <rect x="27" y="30" width="46" height="30" rx="9" fill="url(#screenGrad)"/>
+  <!-- Eyes -->
+  <circle cx="40" cy="45" r="5" fill="url(#eyeGlow)"/>
+  <circle cx="41.5" cy="43.5" r="1.5" fill="#FFFFFF" opacity="0.9"/>
+  <ellipse cx="60" cy="45" rx="5" ry="1.5" fill="url(#eyeGlow)"/>
+  <circle cx="61.5" cy="43.5" r="1.5" fill="#FFFFFF" opacity="0.9"/>
+  <!-- Smile -->
+  <path d="M 42 54 Q 50 58 58 54" stroke="#EF4444" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Cheeks -->
+  <circle cx="30" cy="52" r="3" fill="#FCA5A5" opacity="0.6"/>
+  <circle cx="70" cy="52" r="3" fill="#FCA5A5" opacity="0.6"/>
+  <!-- Ears -->
+  <rect x="15" y="40" width="5" height="15" rx="2" fill="#DC2626"/>
+  <rect x="80" y="40" width="5" height="15" rx="2" fill="#DC2626"/>
+  <!-- Base Logo Badge -->
+  <rect x="36" y="71" width="28" height="8" rx="4" fill="#DC2626"/>
+  <text x="50" y="77.5" text-anchor="middle" fill="#FFFFFF" font-size="6.5" font-weight="bold" font-family="Arial">B</text>
+</svg>

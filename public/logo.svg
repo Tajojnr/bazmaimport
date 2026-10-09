@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="220" viewBox="0 0 720 220" role="img" aria-labelledby="title desc">
+  <title id="title">BAZMA Technologies Nig. Ltd.</title>
+  <desc id="desc">Red and black stylized B emblem with pixel squares, red BAZMA wordmark, black company descriptor, and gold underline.</desc>
+  <rect width="720" height="220" fill="none"/>
+  <g transform="translate(28 42)">
+    <!-- Pixel fragments to the left of the emblem -->
+    <rect x="3" y="30" width="12" height="12" fill="#202020"/>
+    <rect x="21" y="18" width="10" height="10" fill="#202020"/>
+    <rect x="5" y="51" width="9" height="9" fill="#d71920"/>
+    <rect x="22" y="45" width="8" height="8" fill="#202020"/>
+    <rect x="15" y="68" width="9" height="9" fill="#202020"/>
+    <rect x="0" y="75" width="7" height="7" fill="#d71920"/>
+    <rect x="28" y="78" width="7" height="7" fill="#202020"/>
+    <!-- stylized interlocking B / arrow mark -->
+    <path d="M42 10 H91 C113 10 128 25 128 45 C128 58 121 68 110 74 C126 80 136 94 136 112 C136 136 117 153 91 153 H42 Z" fill="#d71920"/>
+    <path d="M59 27 H89 C101 27 109 34 109 45 C109 56 101 63 89 63 H59 Z" fill="#fff"/>
+    <path d="M59 83 H91 C106 83 116 91 116 104 C116 117 106 126 91 126 H59 Z" fill="#fff"/>
+    <path d="M42 10 H66 V153 H42 Z" fill="#d71920"/>
+    <path d="M42 10 H75 L105 40 H72 Z" fill="#f5c51b"/>
+    <path d="M42 153 H70 L101 123 H73 Z" fill="#202020"/>
+    <path d="M42 82 L73 82 L105 112 H76 Z" fill="#202020"/>
+    <path d="M42 10 H60 V153 H42 Z" fill="#d71920"/>
+    <path d="M60 82 H87 L112 107 L94 125 L60 91 Z" fill="#202020"/>
+    <path d="M60 27 H88 L106 45 L88 63 H60 Z" fill="#d71920"/>
+    <path d="M60 83 H90 L108 103 L90 122 H60 Z" fill="#202020"/>
+    <path d="M60 27 H84 L100 43 L84 59 H60 Z" fill="#fff"/>
+    <path d="M60 89 H86 L101 103 L86 117 H60 Z" fill="#fff"/>
+  </g>
+  <g>
+    <text x="184" y="116" font-family="Arial, Helvetica, sans-serif" font-size="83" font-weight="800" letter-spacing="-2" fill="#d71920">BAZMA</text>
+    <text x="188" y="151" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" letter-spacing="0.25" fill="#242424">TECHNOLOGIES NIG. LTD.</text>
+    <path d="M187 164 H651" stroke="#e4b522" stroke-width="3"/>
+    <path d="M651 164 H670" stroke="#d71920" stroke-width="3"/>
+  </g>
+</svg>

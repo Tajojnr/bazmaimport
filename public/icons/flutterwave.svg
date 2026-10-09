@@ -1,0 +1,6 @@
+﻿<svg width="140" height="40" viewBox="0 0 140 40" xmlns="http://www.w3.org/2000/svg">
+  <rect width="140" height="40" rx="8" fill="#2D0053"/>
+  <path d="M15 14 C20 20, 25 10, 30 26" stroke="#FB923C" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M22 14 C27 20, 32 10, 37 26" stroke="#F43F5E" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <text x="45" y="25" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="13" font-weight="bold">flutterwave</text>
+</svg>

@@ -1,0 +1,19 @@
+﻿<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" rx="20" fill="#064E3B"/>
+  <rect x="20" y="20" width="760" height="460" rx="16" fill="#047857" stroke="#10B981" stroke-width="4"/>
+  <!-- Gold Seal -->
+  <circle cx="120" cy="120" r="50" fill="#F59E0B" stroke="#FBBF24" stroke-width="4"/>
+  <path d="M120 85 L130 110 L155 110 L135 125 L142 150 L120 135 L98 150 L105 125 L85 110 L110 110 Z" fill="#FFFFFF"/>
+  <!-- Text Content -->
+  <text x="200" y="100" fill="#FEF3C7" font-family="Arial, sans-serif" font-size="28" font-weight="bold">FEDERAL REPUBLIC OF NIGERIA</text>
+  <text x="200" y="135" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="20" font-weight="bold">CORPORATE AFFAIRS COMMISSION (CAC)</text>
+  <line x1="200" y1="155" x2="720" y2="155" stroke="#F59E0B" stroke-width="3"/>
+  <text x="200" y="210" fill="#D1FAE5" font-family="Arial, sans-serif" font-size="18">This is to certify that:</text>
+  <text x="200" y="255" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="32" font-weight="bold">BAZMA TECHNOLOGIES NIG LTD</text>
+  <text x="200" y="305" fill="#D1FAE5" font-family="Arial, sans-serif" font-size="18">RC / Registration No: <tspan fill="#F59E0B" font-weight="bold">RC-7492014</tspan></text>
+  <text x="200" y="345" fill="#D1FAE5" font-family="Arial, sans-serif" font-size="18">Date of Incorporation: <tspan fill="#FFFFFF" font-weight="bold">2024</tspan></text>
+  <text x="200" y="385" fill="#D1FAE5" font-family="Arial, sans-serif" font-size="18">Headquarters: <tspan fill="#FFFFFF" font-weight="bold">Maiduguri, Borno State, Nigeria</tspan></text>
+  <!-- Verified Stamp -->
+  <rect x="580" y="370" width="160" height="60" rx="8" fill="#DC2626" transform="rotate(-5 660 400)"/>
+  <text x="660" y="408" fill="#FFFFFF" font-family="Arial Black, Impact" font-size="20" text-anchor="middle" transform="rotate(-5 660 400)">VERIFIED</text>
+</svg>

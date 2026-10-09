@@ -1,0 +1,5 @@
+﻿<svg width="90" height="40" viewBox="0 0 90 40" xmlns="http://www.w3.org/2000/svg">
+  <rect width="90" height="40" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="32" y="26" fill="#4D148C" font-family="Arial Black, Impact" font-size="18" text-anchor="middle">Fed</text>
+  <text x="62" y="26" fill="#FF6600" font-family="Arial Black, Impact" font-size="18" text-anchor="middle">Ex</text>
+</svg>
